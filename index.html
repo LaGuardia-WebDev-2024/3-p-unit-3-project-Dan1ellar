@@ -14,47 +14,324 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: rgb(254, 249, 242);
+      }
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
+      .pictures {
+        border-radius: 30px; border: 5px solid #eee0c9;
+      }
 
-<body>
+      #title {
+        color: #789DBC;
+      }
 
-  <h1>____'s Recipe Book</h1>
+      h2 {
+        color: #F28585;
+      }
 
-  <h2>Contents:</h2>
+      .contents {
+        color: #384B70;
+      }
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
+      .serving {color: #384B70}
 
-  <h2 id="?">Recipe #1</h2>
+      p {color: #384B70}
 
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
+       table,
+      th,
+      td  {background-color: #ADC4CE; font-align: left; font-family: Helvetica; border: border-radius: 30px; border: 2px solid #789DBC;}
+    </style>
+  </head>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+  <body>
+    <h1 id="title" style="font-family: Helvetica">
+      <center>Daniella's Recipe Book</center>
+    </h1>
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+    <h2>Contents:</h2>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+    <ol class="contents">
+      <li>
+        <a
+          id="carbonara"
+          target="_blank"
+          href="https://www.cookingclassy.com/pasta-carbonara/"
+        >
+          Carbonara pasta</a
+        >
+      </li>
+      <li>
+        <a
+          id="penne"
+          target="_blank"
+          href="https://www.delish.com/cooking/recipe-ideas/a26556220/penne-alla-vodka-recipe/"
+        >
+          Penne alla vodka</a
+        >
+      </li>
+      <li>
+        <a
+          id="pesto"
+          target="_blank"
+          href="https://www.recipetineats.com/pesto-pasta/"
+        >
+          Pesto Pasta</a
+        >
+      </li>
+    </ol>
 
-</body>
+    <h2 id="?">Carbonara Recipe</h2>
 
+    <ul class="serving">
+      <li>Time: 35 minutes</li>
+      <li>Serves: 6</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bacon</td>
+          <td>$6.50</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Garlic</td>
+          <td>$5.50</td>
+        </tr>
+        <tr>
+          <td>Spaghetti</td>
+          <td>$3.30</td>
+        </tr>
+        <tr>
+          <td>Parmesean</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Eggs</td>
+          <td>$4</td>
+        </tr>
+        <tr>
+          <td>Salt and Pepper</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Parsley</td>
+          <td>$2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <strong>Step 1:</strong> Add bacon and water to a skillet and bring to a
+      simmer.
+    </p>
+    <p>
+      <strong>Step 2:</strong>Continue simmering until water is evaporated, then
+      continue to cook the bacon until crispy.
+    </p>
+    <p>
+      <strong>Step 3:</strong> Remove bacon from pan and reserve the drippings.
+    </p>
+    <p>
+      <strong>Step 4:</strong> Saute garlic in that same skillet until golden
+      brown, then add to a bowl with 1 tablespoon bacon fat, eggs, egg yolk,
+      Parmesan and pepper. Mix well.
+    </p>
+    <p>
+      <strong>Step 5:</strong> Meanwhile, cook the spaghetti or linguine pasta
+      until al dente. Once cooked, drain pasta and reserve 1 cup of the cooking
+      water.
+    </p>
+    <p>
+      <strong>Step 6:</strong> Slowly pour the hot cooking water into the egg
+      mixture. Then pour over the hot pasta and toss to coat. Add crumbled
+      bacon.
+    </p>
+    <p>
+      <strong>Step 7:</strong> Let pasta rest for a few minutes, tossing
+      frequently until the carbonara sauce thickens. Serve immediately with a
+      sprinkle of fresh parsley.
+    </p>
+
+    <img
+      class="pictures"
+      src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-verticalTwoByThree735-v2.jpg"
+      width="150"
+    />
+    
+    <p><em>Source: </em><a href="#carbonara">Cooking Classy</a></p>
+
+    <h2>Penne Alla Vodka Recipe</h2>
+
+    <ul class="serving">
+      <li>Time: 35 minutes</li>
+      <li>Serves: 4</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Butter</td>
+          <td>$2</td>
+        </tr>
+        <tr>
+          <td>Tomato Paste</td>
+          <td>$5.25</td>
+        </tr>
+        <tr>
+          <td>Red Pepper Flakes</td>
+          <td>$4.50</td>
+        </tr>
+        <tr>
+          <td>Penne</td>
+          <td>$3.30</td>
+        </tr>
+        <tr>
+          <td>Parmesean</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Cream</td>
+          <td>$4</td>
+        </tr>
+        <tr>
+          <td>Salt and Pepper</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Parsley</td>
+          <td>$2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <strong>Step 1:</strong> Start by gently cooking the shallot and garlic in
+      butter, stirring often with a wooden spoon (better for scraping the pan
+      later on), until softened and translucent but not browned.
+    </p>
+    <p>
+      <strong>Step 2:</strong>In go the tomato paste and red pepper flakes.
+      Cook, stirring often with a wooden spoon, until the paste coats the
+      alliums and is starting to darken.
+    </p>
+    <p>
+      <strong>Step 3:</strong> Now stir in the vodka, scraping up any browned
+      bits, and remove the pot from the heat; we’ll get back to it in a minute!
+    </p>
+    <p>
+      <strong>Step 4:</strong> Use a large pot and be sure to salt the water
+      generously.
+    </p>
+    <p>
+      <strong>Step 5:</strong> Mhen the pasta is al dente (meaning it’s still
+      just a wee bit firm at the core), scoop out 2 cups of the pasta water and
+      then drain the pasta.
+    </p>
+    <p>
+      <strong>Step 6:</strong> Sprinkle half of the Parmesan over and stir until
+      melted and combined.
+    </p>
+    <p>
+      <strong>Step 7:</strong> Now turn off the heat and stir in the drained
+      pasta and remaining Parmesan. If the pasta is looking a little dry, stir
+      in more pasta water, a tablespoon at a time.
+    </p>
+    <p><strong>Step 8:</strong> Now divide into portions and serve.</p>
+
+    <img
+      class="pictures"
+      src="https://www.allrecipes.com/thmb/nO3iistRRBHuMCz1Gr_0XuMGaWg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-8513545-penne-alla-vodka-VAT-hero-4x3-2-4a53c968c3d94a32816f01f5793702ce.jpg"
+      width="200"
+    />
+    <p><em>Source: </em><a href="#penne">Delish</a></p>
+
+    <h2>Pesto Pasta Recipe</h2>
+
+    <ul class="serving">
+      <li>Time: 35 minutes</li>
+      <li>Serves: 4</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredients</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pesto Sauce</td>
+          <td>$6.50</td>
+        </tr>
+        <tr>
+          <td>Pasta of choice</td>
+          <td>~$3.25</td>
+        </tr>
+        <tr>
+          <td>Parmesean</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Salt and Pepper</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Parsley</td>
+          <td>$2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <strong>Step 1:</strong> Bring a large pot of water to the boil with the salt.
+    </p>
+    <p>
+      <strong>Step 2:</strong>Add pasta and cook for the length of time per the packet.
+    </p>
+    <p>
+      <strong>Step 3:</strong> Just before draining, scoop out 1 cup of of the pasta cooking water.
+    </p>
+    <p>
+      <strong>Step 4:</strong> Drain pasta in a colander, leave it for a minute.
+    </p>
+    <p>
+      <strong>Step 5:</strong> Transfer pasta to a bowl (do not use pasta cooking pot, too hot).
+    </p>
+    <p>
+      <strong>Step 6:</strong> Add pesto and 1/4 cup of pasta water. Toss to coat pasta in pesto, adding more water if required to make pasta silky and saucy, rather than dry and sticky.
+    </p>
+    <p>
+      <strong>Step 7:</strong> Taste, add more salt and pepper if desired.
+    </p>
+    <p><strong>Step 8:</strong> Serve immediately, garnished with fresh parmesan.</p>
+
+    <img
+      class="pictures"
+      src="https://www.cookingclassy.com/wp-content/uploads/2022/02/pesto-pasta-1.jpg"
+      width="150"
+    />
+    <p><em>Source: </em><a href="#pesto">Recipetineats</a></p>
+  </body>
 </html>
